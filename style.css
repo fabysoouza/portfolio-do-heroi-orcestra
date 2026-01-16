@@ -119,32 +119,30 @@ header{
 }
 
 #projetos .card-projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--preto);
-    gap: 4px;
     padding: 16px;
     border-radius: 8px;
     width: 240px;
-    height: 260px;
+    height: 280px;
     text-align: center;
 }
-#projetos .card-projeto h2, p{
-    margin-bottom: 10px;
-}
 
-#projetos .card-projeto button{
-    width: 200px;
-    border: none;
+
+#projetos .card-projeto a{
+    text-decoration: none;
+    border: solid ;
     border-radius: 8px;
     padding: 8px;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 700;
-    margin-top: 8px;
-    background-color: var(--branco);
-    cursor: pointer;
+    color: var(--branco);
 }
 
-#projetos .card-projeto button:hover{
+#projetos .card-projeto a:hover{
     background-color: var(--principal-auxiliar);
     padding: 10px;
     transition: 0.3s;
