@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Herói - Fabiana Reis</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="pag-name">
+            <h1>Fabiana Reis: Fabys &#x1F380</h1>
+            <p>Desenvolvedor em Treinamento &#x1F338</p>
+        </div>
+    <div class="bar-navigation">
+        <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#painel-heroi">Painel do Herói</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+        <img src="assets/euzinha-340.jpg" alt="Foto da Fabiana">
+        <div class="texto-sobre">
+            <h2>&#x1F469 Sobre Mim</h2>
+            <br>
+            <p>Olá! Meu nome é <strong>Fabiana Reis</strong>, mais conhecida como Faby. Estou começando minha jornada na Orc'estra e no desenvolvimento web.</p>
+            <br>
+            <p>Estou indo pro 3º semestre da UnB, estudante de <strong>Engenharias</strong> e vivendo um sonho. Não estava preparada, não sabia nada de computador ou programação mas quis arriscar no mundo da tecnologia, e hoje eu amo muuito! </p>
+            <br>
+            <p>Nessa jornada adquiri alguns conhecimentos em: </p>
+
+            <div class="tecnologias">
+
+                <div class="tecnologias-html">
+                <p>HTML</p>
+                <img src="./assets/html-logo.png" alt="Logo html">
+                </div>
+
+                <div class="tecnologias-css">
+                <p>CSS</p>
+                <img src="./assets/css-logo.jpg" alt="Logo css">
+
+                </div>
+                <div class="tecnologias-javascript">
+                <p>JavaScript</p>
+                <img src="./assets/javascript-logo.png" alt="Logo JavaScript">
+                </div>
+
+                <div class="tecnologias-java">
+                <p>JAVA</p>
+                <img src="./assets/java-logo.png" alt="Logo JAVA" style="border-radius: 8px;">
+                </div>
+
+                <div class="tecnologias-figma">
+                <p>Figma</p>
+                <img src="./assets/figma-logo.png" alt="Logo Figma">
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <section id="projetos">
+        <h2>&#x1F4DA Meus Projetos</h2>
+
+            <div class="cards">
+                <div class="card-projeto">
+                    <h2>Meu Primeiro Site</h2>
+                    <p>Página criada no treinamento de HTML, CSS e JavaScript</p>
+                    <button type="submit" href="portfolio.html">Ver</button>
+                </div>
+
+                <div class="card-projeto">
+                    <h2>Site InovaTech</h2>
+                    <p>Página criada no processo seletivo Orc'estra</p>
+                    <button type="submit" href="https://inovatech-trainee-project-seven.vercel.app/">Ver</button>
+                </div>
+
+                <div class="card-projeto">
+                    <h2>Manual de Gamificação</h2>
+                    <p>Manual desenvolvido no processo seletivo Orc'estra</p>
+                    <button type="submit" href="https://www.canva.com/design/DAG2Azrfl8I/C21I_6Wpi_GsX_cQmGCxQA/view?utm_content=DAG2Azrfl8I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h722046b104">Ver</button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    <section id="contato">
+        <div>
+            <h2>&#x1F4DE Contato</h2>
+            <br>
+            <form id="form-contato" action="#" method="POST">
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" >
+                <br><br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Insira seu email" >
+                <br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="30"
+                placeholder="Insira sua mensagem "></textarea>
+                <br><br>
+                <button type="submit" class="botao-primario">Enviar</button>
+                <div id="form-feedback"></div>
+            </form>
+        </div>
+
+        <div class="redes-sociais">
+            <h2>Me acompanhe nas redes sociais: </h2>
+            <div class="redes-sociais-links">
+            <p>Instagram:</p>
+                <a href="https://www.instagram.com/fabysouzzza/"><img src="./assets/instagram.png" alt="Logo instagram"></a>
+                <p>GitHub:</p>
+                <a href="https://github.com/fabysoouza"><img src="./assets/github.png" alt="Logo Github"></a>
+                <p>LinkedIn:</p>
+                <a href="https://www.linkedin.com/in/fabiana-reis-dev"><img src="./assets/linkedin.png" alt="Logo linkedin"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="painel-heroi">
+        <h2>Painel do Herói</h2>
+        <p>Confira suas informações de herói aqui!! &#x1F9B8</p>
+        <br>
+
+        <ul>
+        <li>Nome: <span id="hero-nome">Fabiana Reis</span></li>
+        <li>Classe: <span id="hero-classe">Aspirante a Dev</span></li>
+        <li>Nível: <span id="hero-nivel">1</span></li>
+        <li>XP: <span id="hero-xp">0</span></li>
+        </ul>
+
+        <button id="btn-xp">&#x1F47E +XP &#x1FA77</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fabiana Reis. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>

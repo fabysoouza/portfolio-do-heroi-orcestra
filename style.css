@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --principal-color:#2EB600;
+    --principal-auxiliar: #3FCC10;
+    --preto: #003d0d;
+    --preto-auxiliar: #01571e;
+    --branco: #fffbdc;
+    --branco-auxiliar: #ffffff;
+
+    --fonte-principal: 'Ubuntu' , sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    list-style: none;
+}
+
+h1{
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+}
+
+h2{
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+}
+
+
+
+header{
+    background-color: var(--preto);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+
+.bar-navigation ul{
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+}
+
+.bar-navigation a{
+    color: var(--branco);
+    font-weight: 600;
+
+}
+.bar-navigation a:hover {
+    color: var(--preto-auxiliar);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 32px;
+    padding: 80px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+#sobre img{
+    width: 250px;
+    border-radius: 24px 4px 24px 4px;
+    border:3px solid var(--preto-auxiliar);
+}
+
+#sobre .tecnologias {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 16px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    background-color: #2EB600;
+    border-radius: 16px;
+    margin: 8px;
+}
+#sobre .texto-sobre{
+    max-width: 600px;
+}
+
+#sobre .tecnologias img{
+    width: 50px;
+    border: 0;
+    border-radius:0 ;
+}
+
+#projetos{
+    background-color: var(--principal-color);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px;
+}
+
+#projetos .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+#projetos .card-projeto{
+    background-color: var(--preto);
+    gap: 4px;
+    padding: 16px;
+    border-radius: 8px;
+    width: 240px;
+    height: 260px;
+    text-align: center;
+}
+#projetos .card-projeto h2, p{
+    margin-bottom: 10px;
+}
+
+#projetos .card-projeto button{
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    background-color: var(--branco);
+}
+
+#projetos .card-projeto button:hover{
+    background-color: var(--principal-auxiliar);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#contato{
+    background-color: var(--branco);
+    color: var(--principal-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+}
+
+#contato form input, textarea{
+    border: 3px solid var(--principal-color);
+    border-radius: 8px;
+    padding: 8px;
+    width: 450px;
+    background-color: transparent;
+    max-width: 450px;
+}
+
+#contato button{
+    border: none;
+    padding: 8px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: var(--principal-color);
+    color: var(--branco);
+    width: 450px;
+    cursor: pointer;
+}
+
+#contato button:hover{
+    background-color: var(--preto-auxiliar);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+#form-feedback{
+    text-align: center;
+    font-weight: 700;
+    padding: 8px;
+    
+}
+
+.redes-sociais{
+    color: var(--preto-auxiliar);
+    display: flex;
+    background-color: var(--principal-auxiliar);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 24px;
+    border: 4px dashed var(--preto-auxiliar);
+}
+
+.redes-sociais img{
+    width: 70px;
+    padding: 16px;
+}
+
+.redes-sociais-links{
+    display: flex;
+    align-items: center;
+}
+
+
+#painel-heroi {
+    background-color: var(--preto);
+    color: var(--branco);
+    margin: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+#painel-heroi button{
+    width: 420px;
+    border: none;
+    background-color: var(--branco);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#painel-heroi button:hover{
+    background-color: var(--principal-auxiliar);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 36px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+
+}
+
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bar-navigation ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+
+    #sobre {
+        flex-direction: column; 
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #sobre .tecnologias {
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+
+
+    #contato {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    #contato form input, form textarea, button {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .redes-sociais-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    #painel-heroi {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #painel-heroi ul {
+        padding: 0;
+    }
+
+    #painel-heroi button {
+        width: 100%; 
+    }
+}
