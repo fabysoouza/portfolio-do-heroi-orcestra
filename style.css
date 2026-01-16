@@ -141,6 +141,7 @@ header{
     font-weight: 700;
     margin-top: 8px;
     background-color: var(--branco);
+    cursor: pointer;
 }
 
 #projetos .card-projeto button:hover{
